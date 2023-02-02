@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Caio Lemos Peixoto Martins" />
+    <meta name="description" content="Estou estudando HTML e CSS por meio do CursoemVídeo" />
+    <meta name="keyword" content="aprendizado,html,css,site,programação,desenvolvimento" />
+    <link rel="shortcut icon" href="images/html.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Aprendendo HTML e CSS</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="site-title">
+            <h1>Tags HTML</h1>
+        </div>
+        <nav id="nav-bar">
+            <ul id="menu-list">
+                <li><a class="menu" href="#content1">Básico</a></li>
+                <li><a class="menu" href="#content2">Divs</a></li>
+                <li><a class="menu" href="#content3">Parágrafos</a></li>
+                <li><a class="menu" href="#content4">Listas</a></li>
+                <li><a class="menu" href="#content5">Links de âncoras</a></li>
+                <li><a class="menu" href="#content6">Áudio, Imagem e Vídeo</a></li>
+                <li><a class="menu" href="#content7">Formulários</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="container">
+
+        <section id="content1" class="content">
+            <div class="title">
+                <h2>Básico</h2>
+            </div>
+            <article>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;!DOCTYPE html&gt;</dt>
+                        <dd>Esta tag serve para indicar para o navegador o tipo de arquivo que ele está prestes a abrir, sendo algo que não aparecerá de forma natural para o usuário final.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;html lang="pt-br"&gt; e &lt;/html&gt;</dt>
+                        <dd>A tag html é usada para indicar o tipo de estrutura que será construída ao decorrer do site, também sendo um conteúdo que a princípio não será visto pelo usuário. Nesta área também será definida a língua referente ao texto da página, através do "lang" que no nosso caso recebe "pt-br", pois o texto será em português brasileiro.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;head&gt; e &lt;/head&gt;</dt>
+                        <dd>É uma tag onde o desenvolvedor escreverá meta tags, que serão explicadas adiante, mas serve como uma parte de direção, como se fosse um mapa, onde estarão recursos para integração com outros links e que ajudarão o <abbr title="Search Engine Optimization">SEO</abbr> a entender melhor seu site.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta&gt;</dt>
+                        <dd>As meta tags são usadas para descrever os elementos de uma página web, elas são lidas pelo seu navegador e interpretadas, também sendo tags as quais o usuário não vê.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta charset="UTF-8"&gt;</dt>
+                        <dd>É utilizada para informar os tipos de caracteres que serão usados no código, serve para o navegador otimizar a leitura de forma mais ágil.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</dt>
+                        <dd>É uma meta tag específica para o navegador Internet Explorer que por não suportar o doctype para HTML5, tenta fazer com que seu site seja renderizado de forma a perder algumas funcionalidades e com essa tag você força o navegador a interpretar o documento da forma correta.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</dt>
+                        <dd>A primeira parte do "content", a parte antes da vírgula, significa que a largura do site irá se adaptar de acordo com a largura do dispositivo que está realizando o acesso, já a segunda parte representa a quantidade de zoom inicial ao abrir o site pela primeira vez, que por padrão vem sem zoom.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta name="author" content="Nome do autor do site"&gt;</dt>
+                        <dd>É definida para deixar registrado o nome do autor do site, sendo de uso facultativo e útil para o google reconhecer os sites feitos pelo desenvolvedor. Sendo a parte do "content" o local onde a pessoa ou a empresa coloca o seu nome.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta name="description" content="Descrição do site"&gt;</dt>
+                        <dd>Está meta tag é onde o desenvolvedor coloca a descrição do site, referindo-se ao conteúdo presente no site, sendo a parte "content" onde se escreve esta descrição.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;meta name="keywords" content="Palavras chaves para encontrar o site"&gt;</dt>
+                        <dd>É utilizada para escrever as palavras chave para melhorar as buscas pelos usuários, palavras que contenham características do site, objetivos, coisas do tipo, seguindo o mesmo padrão das tags anteriores de colocar as palavras-chave dentro do "content".</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;body&gt; e &lt;/body&gt;</dt>
+                        <dd>Esta é a região onde o seu site será feito de fato, região esta que será visível para o usuário final, zona que abrigará interações e etc...</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;link&gt;</dt>
+                        <dd>Esta tag é utilizada para diversos fins, mas os principais deles são, fazer a conexão com seu favicon, que é aquele pequeno ícone que fica ao lado do nome do site no separador do navegador, e as folhas de estilo, também conhecidas como CSS.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <dl>
+                        <dt>&lt;title&gt; e &lt;/title&gt;</dt>
+                        <dd>É a tag utilizada para definir o título do seu site, aquele que aparecerá na parte de cima do navegador ao lado do favicon.</dd>
+                    </dl>
+                </div>
+                <div class="basic">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código: </h4>
+                        <img src="images/ex-basico.png" alt="Exemplo de como o código fica após essas linhas">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <div class="backgroud-white">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="content2" class="content">
+            <div class="title">
+                <h2>Divs</h2>
+            </div>
+            <article>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;header&gt; e &lt;/header&gt;</dt>
+                        <dd>A tag acima funciona como o cabeçalho do site, local onde normalmente ficam localizados itens como a logo da marca, barra de pesquisa, menu de navegação, tema do site entre outras coisas.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;nav&gt; e &lt;/nav&gt;</dt>
+                        <dd>Já esta é a tag de navegação do site a qual funciona como um gps para que o usuário consiga navegar pelo site de forma mais intuitiva. Pode se encontrar tanto dentro quanto fora da tag header.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;main&gt; e &lt;/main&gt;</dt>
+                        <dd>Esta tag é onde a parte principal do seu site estará dentro, sendo aqui o local onde as outras tags se encontrarão dentro, com exceção apenas das tag header e nav.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;section&gt; e &lt;/section&gt;</dt>
+                        <dd>É uma seção do seu site, normalmente uma área onde será colocado o texto ou outras "caixas" que farão o enquadramento do texto.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;article&gt; e &lt;/article&gt;</dt>
+                        <dd>O article é outra tag que que cria uma espécie de caixa, porém, normalmente se encontra dentro de uma section ou vice-verse, essas tags fazem papel de "pai" e "filho", onde uma normalmente é usada para ajustar a outra.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;aside&gt; e &lt;/aside&gt;</dt>
+                        <dd>Já esta tag tem como função falar de algo que não está tão relacionado com o conteúdo principal, funcionando como uma outra caixa, avulsa em relação a tag article.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;div&gt; e &lt;/div&gt;</dt>
+                        <dd>Esta tag não possui significado semântico, mas para a estrutura do site ela funciona como se fosse uma caixa, guardando os itens do interior dela e realizando quebras de linha como se fosse realmente um bloco.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;span&gt; e &lt;/span&gt;</dt>
+                        <dd>Esta tag possui o funcionamento similar ao de uma div, porém, não possui a função de criar uma "caixa" ao decorrer do texto, ou seja essa tag é do tipo inline box. Funciona para marcar itens específicos.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <dl>
+                        <dt>&lt;footer&gt; e &lt;/footer&gt;</dt>
+                        <dd>Este é o rodapé do site, a parte onde normalmente se encontram informações de contato, horário de funcionamento dos canais de comunicação, direitos autorais e entre outras informações.</dd>
+                    </dl>
+                </div>
+                <div class="div">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código: </h4>
+                        <img src="images/ex-divs.png" alt="Linhas de código com divs semânticas sendo usadas">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <img src="images/visual-divs.png" alt="Imagem com a separação de cada div semântica">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="content3" class="content">
+            <div class="title">
+                <h2>Parágrafos</h2>
+            </div>
+            <article>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;h1&gt; e &lt;/h1&gt; até &lt;h6&gt; e &lt;/h6&gt;</dt>
+                        <dd>Estas são as tags de título sendo a h1 a com maior "importância" dentro do site, para o navegador, pois o tamanho e a fonte são facilmente alteradas com CSS. Variam do h1 até o h6, sendo mais usadas do h1 até o h3 normalmente.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;p&gt; e &lt;/p&gt;</dt>
+                        <dd>Tag para inserir um parágrafo no seu texto.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;strong&gt; e &lt;/strong&gt;</dt>
+                        <dd>Esta tag é responsável por deixar seu texto em negrito, de forma semântica.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;abbr title="Significado da sigla"&gt; e &lt;/abbr&gt;</dt>
+                        <dd>Tag para adicionar o significado de uma sigla, onde você pode colocar o significado na parte "title" e sempre que o usuário passar com o mouse por cima aparecerá o significado.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;em&gt; e &lt;/em&gt;</dt>
+                        <dd>Tag utilizada para inserir o itálico em textos, porém, de maneira semântica.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;sup&gt; e &lt;/sup&gt;</dt>
+                        <dd>Insere no texto um expoente, caso você precise digitar fórmulas matemáticas.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;sub&gt; e &lt;/sub&gt;</dt>
+                        <dd>Insere um índice no texto, o número que fica na parte de baixo de uma fórmula química, H<sub>2</sub>O.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;del&gt; e &lt;/del&gt;</dt>
+                        <dd>Funciona como se estivesse deletando algum trecho, deixa o efeito de riscado no texto.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;ins&gt; e &lt;/ins&gt;</dt>
+                        <dd>Deixa um sublinhado no texto, como se fosse uma lacuna.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;mark&gt; e &lt;/mark&gt;</dt>
+                        <dd>Marca uma parte do texto, como se fosse um marca-texto mesmo.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;small&gt; e &lt;/small&gt;</dt>
+                        <dd>Faz com que a fonte da letra se altere deixando-a menor.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;code&gt; e &lt;/code&gt;</dt>
+                        <dd>Caso você precise escrever algum código de outra linguagem, por exemplo, essa tag vai colocar atributos diferentes ao modo como o conteúdo é exibido.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;pre&gt; e &lt;/pre&gt;</dt>
+                        <dd>Faz com que o conteúdo seja exibido exatamente da mesma forma como está escrita no código.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;hr&gt;</dt>
+                        <dd>Esta tag faz uma linha na largura total da tela para separar dois trechos que você desejar.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;br&gt;</dt>
+                        <dd>É uma tag de quebra de linha(break row).</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;bdo dir="ltr ou rtl"&gt; e &lt;/bdo&gt;</dt>
+                        <dd>Usado para escrever um trecho de trás para frente(rtl) ou de forma normal(ltr), pelo menos para nós.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;q&gt; e &lt;/q&gt;</dt>
+                        <dd>Usado em caso de necessidade para fazer uma citação no meio de um parágrafo, visualmente essa tag apenas coloca o trecho entre aspas duplas, porém, semanticamente têm sua importância.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;blockquote&gt; e &lt;/blockquote&gt;</dt>
+                        <dd>Funciona como um bloco de citação, ao invés de fazer o papel do anterior que funciona no meio de um parágrafo.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;u&gt; e &lt;/u&gt;</dt>
+                        <dd>Usado caso necessário sublinhar(underline) alguma parte do texto.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <dl>
+                        <dt>&lt;!--Comente qualquer coisa--&gt;</dt>
+                        <dd>Serve para você adicionar comentários no seu código, tudo o que é inserido entre os hífens vira comentário.</dd>
+                    </dl>
+                </div>
+                <div class="paragraph">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código: </h4>
+                        <img src="images/ex-paragrafo.png" alt="Código com todas as tags de texto escritas">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <img src="images/visual-paragrafo.png" alt="Como o usuário vê o texto com as tags aplicadas">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="content4" class="content">
+            <div class="title">
+                <h2>Listas</h2>
+            </div>
+            <article>
+                <div class="list">
+                    <dl>
+                        <dt>&lt;ol&gt; e &lt;/ol&gt;</dt>
+                        <dd>Este tipo de lista é a lista ordenada(ordered list), que por padrão tem seus itens enumerados.</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <dl>
+                        <dt>&lt;ul&gt; e &lt;/ul&gt;</dt>
+                        <dd>Já esta é a lista desordenada(unordered list), que por padrão não tem seus itens enumerados, apenas uma marcação indicando que aquilo é uma lista.</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <dl>
+                        <dt>&lt;li&gt; e &lt;;li&gt;</dt>
+                        <dd>E este é o item da lista(list item), local onde você colocará o nome dos elementos.</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <dl>
+                        <dt>&lt;dl&gt; e &lt;/dl&gt;</dt>
+                        <dd>Agora esta é a lista de definição(definition list), que funciona como um dicionário, este mesmo é um exemplo desta lista.</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <dl>
+                        <dt>&lt;dt&gt; e &lt;/dt&gt;</dt>
+                        <dd>A tag acima serve para definir o termo da lista</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <dl>
+                        <dt>&lt;dd&gt; e &lt;/dd&gt;</dt>
+                        <dd>Esta tag é usada para fazer a definição do termo.</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código</h4>
+                        <img src="images/ex-lista.png" alt="Código com as configurações de lista">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <img src="images/visual-lista.png" alt="Aparência da lista para o usuário">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="content5" class="content">
+            <div class="title">
+                <h2>Links e Âncoras</h2>
+            </div>
+            <article>
+                <div class="anchor">
+                    <dl>
+                        <dt>&lt;a href="URL" target="Indica onde será aberto o link"&gt; e &lt;/a&gt;</dt>
+                        <dd>Esta é a tag responsável por criar uma âncora dentro de um site, que nada mais é do que um link, sendo a parte do href onde o responsável pelo site coloca a URL para onde o usuário deve ser direcionado e a parte entre a abertura e o fechamento das tags onde a ele coloca também o conteúdo que deve ser mostrado a pessoa que estiver consumindo o conteúdo. O target pode ser dentro do próprio site(_self) ou redirecionar para fora(_blank).</dd>
+                        <p>Obs: a própria barra de navegação pelo conteúdo do site é formada por várias âncoras.</p>
+                    </dl>
+                </div>
+                <div class="anchor">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código: </h4>
+                        <img src="images/ex-ancora.png" alt="Exemplo de uma linha de código com a tag &lt;a&gt;">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <img src="images/visual-ancora.png" alt="Como a âncora se parece para o usuário">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="content6" class="content">
+            <div class="title">
+                <h2>Áudio, Imagem e Vídeo</h2>
+            </div>
+            <article>
+                <div class="audio">
+                    <dl>
+                        <dt>&lt;audio src="Caminho para o áudio"&gt; e &lt;/audio&gt;</dt>
+                        <dd>É uma tag usada para inserir áudio no seu site, onde o desenvolvedor colocará o local do arquivo sonoro dentro do "src"</dd>
+                    </dl>
+                </div>
+                <div class="audio">
+                    <dl>
+                        <dt>&lt;img src="Caminho para a imagem" alt="Sobre o que se trata a imagem"&gt;</dt>
+                        <dd>Tag usada para colocar imagens em seu site, sendo apenas necessário informar o caminho da imagem no "src" e sobre o que a imagem se trata dentro do "alt" para ajudar o google a entender a imagem além de ajudar deficientes visuais por meio de ferramentas de leitura de site.</dd>
+                    </dl>
+                </div>
+                <div class="audio">
+                    <dl>
+                        <dt>&lt;video src="Caminho para o vídeo" poster="Para colocar thumbnail em seu vídeo" controls&gt; e &lt;/video&gt;</dt>
+                        <dd>É uma tag usada para inserir vídeo no seu site, onde o desenvolvedor colocará o local do arquivo de vídeo dentro do "src", é também facultativo o uso do recurso "poster" e controls, que disponibiliza para o usuário os controles do vídeo.</dd>
+                    </dl>
+                </div>
+                <div class="audio">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código: </h4>
+                        <img src="images/ex-audio.png" alt="O código com todas as funções implementadas">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <img src="images/visual-audio.png" alt="Como são mostrados para o usuário final esses códigos">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="content7" class="content">
+            <div class="title">
+                <h2>Formulários</h2>
+            </div>
+            <article>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;form&gt; e &lt;/form&gt;</dt>
+                        <dd>É a tag onde seu formulário ficará dentro.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;label&gt; e &lt;/label&gt;</dt>
+                        <dd>Esta é a tag responsável pela identificação do input do formulário.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;input type="text" placeholder="Texto que aparece dentro" required&gt;</dt>
+                        <dd>Esta tag é usada normalmente dentro de um formulário para o usuário colocar o nome dele, sendo basicamente uma caixa de texto onde o cliente pode digitar qualquer coisa. A parte do </dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;input type="email" placeholder="Texto que aparece dentro" required&gt;</dt>
+                        <dd>Tag usada para fazer a verificação de email, local onde o usuário pode digitar seu email.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;input type="password" placeholder="Texto que aparece dentro" required&gt;</dt>
+                        <dd>Esse input serve para o usuário digitar sua senha e automaticamente ocultar a senha.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;input type="radio" value="Resultado recebido ao marcar a caixa" name="Nome da classe" id="Nome do item"&gt;</dt>
+                        <dd>Tipo de caixa de marcar, que só suporta um valor, sendo o "value" o valor recebido pelo banco de dados, o "name" é o nome atribuído a classe e o "id" é a identificação única do item.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;input type="checkbox" value="Resultado recebido ao marcar a caixa" name="Nome do item" id="Nome do item"&gt;</dt>
+                        <dd>Tipo de caixa de marcar, que suporta vários valores, sendo o "value" o valor recebido pelo banco de dados, o "name" é o nome atribuído ao item e o "id" é a identificação única do item.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;select name="Nome do seletor"&gt; e &lt;/select&gt;</dt>
+                        <dd>São as tags de abertura e fechamento de uma lista de itens que o usuário pode selecionar um deles.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;option selected(Para deixar a caixa marcada como padrão)&gt; e &lt;/option&gt;</dt>
+                        <dd>São as tags onde você colocará o conteúdo das opções de escolha entre elas.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;textarea&gt; e &lt;/textarea&gt;</dt>
+                        <dd>É uma área onde o usuário pode digitar uma mensagem maior, como uma mensagem do WhatsApp.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;input type="submit" value="Enviar"&gt;</dt>
+                        <dd>Botão de envio do formulário.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <dl>
+                        <dt>&lt;button&gt; e &lt;/button&gt;</dt>
+                        <dd>Cria um botão de envio de formulário.</dd>
+                    </dl>
+                </div>
+                <div class="form">
+                    <div class="sub-title">
+                        <h3>Visual</h3>
+                    </div>
+                    <div class="developer">
+                        <h4>Código: </h4>
+                        <img src="images/ex-form.png" alt="Foto do código do formulário">
+                    </div>
+                    <div class="user">
+                        <h4>UI: </h4>
+                        <img src="images/visual-form.png" alt="Como um formulário aparece para o usuário">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div id="autoria">
+            <p>Criado por <a href="https://github.com/CaioLemos01" target="_blank">Caio Lemos Peixoto Martins</a></p>
+        </div>
+        <div id="copyright">
+            <p>Copyright <span id="copy">&copy;</span> 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
